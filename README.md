@@ -24,3 +24,38 @@ The project is hosted at:https://rishikaghosh.github.io/Sudoku-Solver/
 ![Screenshot (44)](https://user-images.githubusercontent.com/58912231/106581330-bf92b880-6568-11eb-885a-90a726d220ff.png)
 
 ![Screenshot (45)](https://user-images.githubusercontent.com/58912231/106581832-4f386700-6569-11eb-92e6-ee40e39719d8.png)
+
+## Logic
+ 1. First we find an empty cell in the matrix.
+ 2. We place a _safe number_ in that cell.
+ 3. Then we make a _recursive call_ on the subproblem.
+ 4. For the sub-problem, we create a helper function to check whether _safe number_ satisfies the rules of Sudoku or not. The helper function is as follows:
+ ``` javascript
+ //checking if the safe number repeats in the same row or column
+ function isPossible(board, sr, sc, val) {
+    for (var row = 0; row < 9; row++) {
+        if (board[row][sc] == val||board[sr][row]==val) {
+            return false;
+        }
+    }
+
+
+// finding the starting point of a subgrid
+    var r = sr - sr % 3;
+    var c = sc - sc % 3;
+// checking whether the safe number repeats in the sub-grid or not  
+    for (var cr = r; cr < r + 3; cr++) {
+        for (var cc = c; cc < c + 3; cc++) {
+            if (board[cr][cc] == val) {
+                return false;
+            }
+        }
+    }
+    return true;
+
+}
+```
+5. If the conditon is satisfied, the function returns true. Else, it backtracks and checks with another value.
+## Conclusion
+This project was a fun way to understand how backtracking works.
+I hope you all like it!
