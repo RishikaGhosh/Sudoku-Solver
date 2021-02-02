@@ -96,7 +96,6 @@ button.onclick = function () {
     xhrRequest.send()
 }
 
-//to be completed by student
 function isPossible(board, sr, sc, val) {
     for (var row = 0; row < 9; row++) {
         if (board[row][sc] == val||board[sr][row]==val) {
@@ -120,7 +119,6 @@ function isPossible(board, sr, sc, val) {
 
 }
 
-//to be completed by student
 function solveSudokuHelper(board, r, c) {
     if (r == 9) {
         changeBoard(board);
