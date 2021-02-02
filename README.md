@@ -10,7 +10,7 @@ The project is hosted at:https://rishikaghosh.github.io/Sudoku-Solver/
   2. Some of the cells in the subgrid will be filled.
   
 - <h3>The Task</h3>
-     The task of the game is to complete the grid such that:
+     The task of the game is to complete the grid with digits 0 to 9 such that no number should not repeat in the **same row**, **same column**  or the  **same sub-grid** .
         
 
 
