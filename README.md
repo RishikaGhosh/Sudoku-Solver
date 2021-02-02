@@ -15,7 +15,7 @@ The project is hosted at:https://rishikaghosh.github.io/Sudoku-Solver/
        1. same row
        2. same column and 
        3. same sub-grid
- The main intention of this project is to solve a **randomly generated grid** using the concept of **Backtracking Algorithms**.
+ The main intention of this project is to solve a **randomly generated grid** under these restrictions using the concept of **Backtracking Algorithms**.
         
 
 
