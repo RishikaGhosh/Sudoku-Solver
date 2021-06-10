@@ -1,6 +1,6 @@
 # Sudoku-Solver
 ## Introduction
-This is a simple **JavaScript** Project which generates a random Sudoku Grid and solves it.
+A **JavaScript** Project which generates a random Sudoku Grid and solves it.
 
 The project is hosted at:https://rishikaghosh.github.io/Sudoku-Solver/
 ## Main Idea
